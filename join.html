@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YWAG | Join Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="index.html"><img src="Logo.jpg" alt="YWAG Logo" class="logo"></a>
+      <button class="burger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="join.html" class="active">Join..Us</a></li>
+        <li><a href="submissions.html">Submissions</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="join-page">
+    <section class="join-hero">
+      <h2>Become a Member</h2>
+      <p>Join the Young Writers' Association of The Gambia for just <strong>D50</strong> annually.  
+      Please fill out the form below and attach your payment confirmation.</p>
+    </section>
+
+    <section class="join-form-section">
+      <form class="join-form" onsubmit="return validateForm();" enctype="multipart/form-data">
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" required>
+
+        <label for="residence">Residence:</label>
+        <input type="text" id="residence" name="residence" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="genre">Preferred Writing Genre:</label>
+        <select id="genre" name="genre" required>
+          <option value="">-- Select Genre --</option>
+          <option value="poetry">Poetry</option>
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="playwriting">Playwriting</option>
+          <option value="journalism">Journalism</option>
+          <option value="other">Other</option>
+        </select>
+
+        <div class="payment-info">
+          <h3>Payment Details</h3>
+          <p><strong>Amount:</strong> D50</p>
+          <p><strong>Bank Name:</strong> Gambia National Bank</p>
+          <p><strong>Account Name:</strong> Young Writers' Association of The Gambia</p>
+          <p><strong>Account Number:</strong> 123456789</p>
+          <p><strong>Wave Transfer Number:</strong> +220 123 4567</p>
+        </div>
+
+        <label for="payment-screenshot">Upload Payment Screenshot:</label>
+        <input type="file" id="payment-screenshot" name="payment-screenshot" accept="image/*" required>
+
+        <button type="submit" class="hero-button standard-btn">Join Now</button>
+        <div id="form-message" class="form-message"></div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <h3 class="footer-title">Contact Us</h3>
+        <ul class="footer-list">
+          <li><i class="fas fa-envelope"></i> ywagambia@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +220-123456789</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Highway - Banjul</li>
+        </ul>
+      </div>
+
+      <div class="footer-section quick-links">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="submissions.html">Submissions</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section social-media">
+        <h3 class="footer-title">Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Young Writers' Association Of The Gambia. All Rights Reserved.</p>
+      <p>Design by Amadou S Jallow</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
